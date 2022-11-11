@@ -10,16 +10,21 @@ import Button from '@mui/material/Button';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import Typography from '@mui/material/Typography';
 import Fab from '@mui/material/Fab';
+import Skewc from './Skewc';
+
 
 
 const Hero = () => {
     const Hero=styled.section`
+        margin-top:66px;
+        height: 100vh;
+        position: relative;
         .parent{
             display:flex;
             flex-wrap:wrap;
             align-content:center;
             flex-direction:row;
-            height:calc(100vh - 46px);
+            height:70vh;
             .section{
                 flex: 1 1 50%;
             }
@@ -36,12 +41,16 @@ const Hero = () => {
                 Button{
                     align-self: center;
                 }
+                h3{
+                    color:${({theme})=>theme.colors.headeractive};
+                    font-family:inherit;
+                }
             }
             .image{
                 display: flex;
                 justify-content: flex-end;
                 img{
-                    max-width:70%;
+                    max-width:65%;
                 }
             }
         }
@@ -53,14 +62,14 @@ const Hero = () => {
            <div className='parent'>
             <div className='logo section'>
                 <img src={logo} alt="student logo"/>
-                <Button variant="contained" className='mt-3' startIcon={<StarBorderIcon />}>
+                <Button variant="contained" className='mt-3 common_button' startIcon={<StarBorderIcon />}>
                     Topper
                 </Button>
                 <Typography variant="h3" className='mt-3'>
                     Total No of student 
-                    <Fab color="secondary" aria-label="edit" className='mx-2'>
+                    {/* <Fab aria-label="edit" className='mx-2 common_button'>
                         1001
-                    </Fab>
+                    </Fab> */}
                 </Typography>
                 
                 
@@ -70,6 +79,7 @@ const Hero = () => {
             </div>
            </div>
         </Container>
+        <Skewc/>
     </Hero>
   )
 }

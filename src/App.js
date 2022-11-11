@@ -15,7 +15,6 @@ import Hero from './components/Hero'
 const App = () => {
   const theme={
     colors:{
-      heading:'red',
       black:'black',
       purple:'purple',
       white:'white',
@@ -27,7 +26,9 @@ const App = () => {
       text2:'#8b8556',
       text3:'#54396b',
       text4:'#9b4330',
-      text5:'#9C27B0'
+      text5:'#9C27B0',
+      text6:'#f8f8f8',
+      text7:'#5a1466 '
 
     },
     media:{

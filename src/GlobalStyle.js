@@ -34,8 +34,13 @@ img {
      object-fit: cover;
 }
 
-button{
-    background-color:${({theme})=>theme.colors.text2}!important;
+body{
+    background-color:${({theme})=>theme.colors.text6};
+}
+
+.common_button{
+    background-color:${({theme})=>theme.colors.text7}!important;
+    color:white!important;
 }
 
 
