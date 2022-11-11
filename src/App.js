@@ -15,21 +15,11 @@ import Hero from './components/Hero'
 const App = () => {
   const theme={
     colors:{
-      black:'black',
-      purple:'purple',
-      white:'white',
-      red:'red',
       header:'#75482d',
       headeractive:'#db5c64',
-      headerborder:'#9dc76f',
-      text1:'#6a6ab3',
-      text2:'#8b8556',
-      text3:'#54396b',
-      text4:'#9b4330',
-      text5:'#9C27B0',
       text6:'#f8f8f8',
-      text7:'#5a1466 '
-
+      text7:'#5a1466 ',
+      white:'white'
     },
     media:{
       smaller:'480px',

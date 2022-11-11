@@ -1,17 +1,14 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
-import student from '../assets/images/student.jpg'
-import student1 from '../assets/images/student1.png'
 import logo from '../assets/images/logo.png'
-import graduate from '../assets/images/graduate.png'
 import book from '../assets/images/book.png'
 import Button from '@mui/material/Button';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import Typography from '@mui/material/Typography';
 import Fab from '@mui/material/Fab';
 import Skewc from './Skewc';
-
+import rightbg from '../assets/images/right-bg.png';
 
 
 const Hero = () => {
@@ -19,6 +16,10 @@ const Hero = () => {
         margin-top:66px;
         height: 100vh;
         position: relative;
+        background-image:url(${rightbg});
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
         .parent{
             display:flex;
             flex-wrap:wrap;

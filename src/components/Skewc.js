@@ -19,7 +19,7 @@ position:absolute;
 left:0px;
 bottom:0px;
 right:0px;
-background: linear-gradient(to left bottom, #5a1466  49%, #f8f8f8 50%);
+background: linear-gradient(to left bottom, #5a1466  49%, white 50%);
 
 `;
 return (
