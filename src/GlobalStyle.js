@@ -77,16 +77,7 @@ body{
   background-position: right;
 }
 
-${'' /* .item_container section::before{
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 10px;
-  height: 90%;
-  width: 3px;
-  background: #478d2a;
-  z-index: 9998;
-} */}
+
 
 
 .item_container section .front{
@@ -136,6 +127,7 @@ ${'' /* .item_container section::before{
   bottom: 0px;
   right: 0px;
   width: 100%;
+  padding: 1rem;
 }
 
 .item_container section .back .profile_image{
@@ -143,12 +135,11 @@ ${'' /* .item_container section::before{
   height: 115px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
+  }
 
 .item_container section .back .profile_image img{
   height:100%;
@@ -158,6 +149,36 @@ ${'' /* .item_container section::before{
 .item_container section:hover .back {
   -webkit-transform: scale(0);
           transform: scale(0);
+}
+
+.item_container section .back .profile_data{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 27px;
+  text-align:center;
+} 
+
+.item_container section .back .profile_data span{
+  color:${({theme})=>theme.colors.text7};
+  padding: 0px 6px;
+  position: relative;
+  font-size:14px;
+  
+} 
+
+
+
+.item_container section .back .profile_data span:not(:last-child)::before{
+  content:'';
+  position:absolute;
+  width:5px;
+  height:5px;
+  background-color:#8a7e8d;
+  border-radius:50%;
+  top:10px;
+  right:-3px;
 }
 
 `

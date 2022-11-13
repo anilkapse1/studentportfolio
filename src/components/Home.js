@@ -31,10 +31,11 @@ const Home = () => {
         text-align:center;
         input{
           height:2rem;
-          color:${({theme})=>theme.colors.text7}
+          color:${({theme})=>theme.colors.text7};
         }
         .Mui-focused{
-          color:${({theme})=>theme.colors.header}
+          color:${({theme})=>theme.colors.header};
+          transform:scale(1);
         }
         .css-1ptx2yq-MuiInputBase-root-MuiInput-root::after{
           border-bottom:4px solid ${({theme})=>theme.colors.headeractive}
