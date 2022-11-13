@@ -48,7 +48,11 @@ body{
 .common_margin{
   margin-top:20px;
   margin-bottom:100px;
+}
 
+.common_footer_margin{
+  margin-top:100px;
+  margin-bottom:100px;
 }
 
 {/*Style for item*/}
@@ -177,7 +181,7 @@ body{
   height:5px;
   background-color:#8a7e8d;
   border-radius:50%;
-  top:10px;
+  top:7px;
   right:-3px;
 }
 

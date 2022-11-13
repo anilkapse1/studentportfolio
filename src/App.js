@@ -10,6 +10,8 @@ import Header from './components/Header'
 import {ThemeProvider} from 'styled-components'
 import { GlobalStyle } from './GlobalStyle'
 import Hero from './components/Hero'
+import Footer from './components/Footer'
+
 
 
 const App = () => {
@@ -43,6 +45,7 @@ const App = () => {
           <Route path="/announcement" element={<Announcement/>}/>
           <Route path="/team" element={<Team/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
    
     </ThemeProvider>

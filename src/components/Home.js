@@ -50,12 +50,11 @@ const Home = () => {
       <Container className='search_section common_margin'>
       {/*search text field start*/}
         <div className='search_area'>
-        <FormControl sx={{ m: 1, width: '50ch' }} variant="standard">
+        <FormControl sx={{ m: 1, width: '40ch' }} variant="standard">
           <InputLabel htmlFor="standard-adornment-password">Search student By Name...</InputLabel>
           <Input
             id="standard-adornment-password"
             type= 'search'
-            onChange=""
             endAdornment={
               <InputAdornment position="end">
                 <IconButton 
