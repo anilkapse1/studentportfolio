@@ -67,7 +67,7 @@ body{
 }
 
 .item_container section{
-  flex:0 1 30%;
+  flex:1 1 30%;
   border-radius: 10px;
   margin: 25px 25px 0px 0px;
   position: relative;
@@ -148,7 +148,7 @@ body{
   }
 
 .item_container section .back .profile_image img{
-  height:100%;
+  width:100%;
   
 }
 

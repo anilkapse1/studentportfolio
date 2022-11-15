@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Fab from '@mui/material/Fab';
 import rightbg from '../assets/images/right-bg.png';
 import Skewright from './Skewright';
+import Typewriter from "typewriter-effect";
 
 
 const Hero = () => {
@@ -45,6 +46,8 @@ const Hero = () => {
                 h3{
                     color:${({theme})=>theme.colors.headeractive};
                     font-family:inherit;
+                    font-size:2.5rem;
+                    margin-top: 30px!important;
                 }
             }
             .image{
@@ -67,10 +70,17 @@ const Hero = () => {
                     Topper
                 </Button>
                 <Typography variant="h3" className='mt-3'>
-                    Total No of student 
-                    {/* <Fab aria-label="edit" className='mx-2 common_button'>
-                        1001
-                    </Fab> */}
+                        <Typewriter options={{
+                            autoStart:true,
+                            loop:true,
+                            delay:40,
+                            strings:[
+                                "I want to be a Doctor",
+                                "I want to be an Engineer",
+                                "I want to be a Teacher"
+                        ]
+                        }}/>
+                    
                 </Typography>
                 
                 
