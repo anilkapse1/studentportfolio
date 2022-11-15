@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Skewc = () => {
+const Skewright = () => {
   const Skew1 = styled.section`
   width:100%;
  height:100px;
@@ -9,7 +9,7 @@ const Skewc = () => {
  left:0px;
  bottom:101px;
  right:0px;
- background: linear-gradient(to left top, #e1e1e1  49%, #f8f8f8 50%);
+ background: linear-gradient(to left top, #e1e1e1  49%, white 50%);
  
  `;
  const Skew2 = styled.section`
@@ -30,6 +30,6 @@ return (
   )
 }
 
-export default Skewc
+export default Skewright
 
 

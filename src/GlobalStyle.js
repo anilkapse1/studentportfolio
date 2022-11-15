@@ -19,6 +19,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 8.5rem;
 }
+
+
 html::-webkit-scrollbar {
   width: .2rem;
 }
@@ -37,7 +39,7 @@ img {
 }
 
 body{
-    background-color:${({theme})=>theme.colors.text6};
+    background-color:${({theme})=>theme.colors.white};
 }
 
 .common_button{
@@ -184,6 +186,14 @@ body{
   top:7px;
   right:-3px;
 }
+
+
+{/*Style for item end*/}
+
+{/*Style for scroll snap*/}
+
+
+
 
 `
 

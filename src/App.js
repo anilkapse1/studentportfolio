@@ -35,19 +35,18 @@ const App = () => {
     <ThemeProvider theme={theme}>
     <GlobalStyle/>
     <BrowserRouter>
-        <Header/>
-        <Hero/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/stream" element={<Stream/>}/>
-          <Route path="/area" element={<Area/>}/>
-          <Route path="/topper" element={<Topper/>}/>
-          <Route path="/announcement" element={<Announcement/>}/>
-          <Route path="/team" element={<Team/>}/>
-        </Routes>
-        <Footer/>
+            <Header/>
+            <Hero/>
+            <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="/stream" element={<Stream/>}/>
+              <Route path="/area" element={<Area/>}/>
+              <Route path="/topper" element={<Topper/>}/>
+              <Route path="/announcement" element={<Announcement/>}/>
+              <Route path="/team" element={<Team/>}/>
+            </Routes>
+          <Footer/>
       </BrowserRouter>
-   
     </ThemeProvider>
     )
 }

@@ -7,8 +7,8 @@ import Button from '@mui/material/Button';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import Typography from '@mui/material/Typography';
 import Fab from '@mui/material/Fab';
-import Skewc from './Skewc';
 import rightbg from '../assets/images/right-bg.png';
+import Skewright from './Skewright';
 
 
 const Hero = () => {
@@ -80,7 +80,7 @@ const Hero = () => {
             </div>
            </div>
         </Container>
-        <Skewc/>
+        <Skewright/>
     </Hero>
   )
 }

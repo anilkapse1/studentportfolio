@@ -87,7 +87,7 @@ const Footer = () => {
             <ShareRoundedIcon />
           </Fab>
           <div className='my-4'>
-            <span>Handcrafted with <FavoriteIcon/> kapsecode</span>
+            <span>Handcrafted with <FavoriteIcon/> kapsecode.com</span>
           </div>
         </div>
 

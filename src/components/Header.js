@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 
 const Header = () => {
     const Header = styled.section`
-        background-color:${({theme})=>theme.colors.text6};
+        background-color:${({theme})=>theme.colors.white};
         position: fixed;
         width: 100%;
         z-index: 9999;
@@ -24,7 +24,6 @@ const Header = () => {
                     padding:10px 10px;
                     display:block;
                     color:${({theme})=>theme.colors.header};
-                    border:1px solid ${({theme})=>theme.colors.text6};
                     font-weight:500;
                     &:hover{
                         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
