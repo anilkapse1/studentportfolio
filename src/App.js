@@ -18,7 +18,7 @@ const App = () => {
   const theme={
     colors:{
       header:'#75482d',
-      headeractive:'#db5c64',
+      headeractive:'#c32775',
       text6:'#f8f8f8',
       text7:'#5a1466 ',
       white:'white'

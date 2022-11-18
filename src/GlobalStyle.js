@@ -62,8 +62,11 @@ body{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
+  justify-content:center;
+}
 
-
+.item_container .emptyImage{
+  width:40%;
 }
 
 .item_container section{

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import styled from "styled-components";
 import FormControl from "@mui/material/FormControl";
@@ -10,9 +10,18 @@ import SearchIcon from "@mui/icons-material/Search";
 import Item from "./Item";
 import leftbg from "../assets/images/left-bg.png";
 import rightbg from "../assets/images/right-bg.png";
+import { useDispatch, useSelector } from "react-redux";
+import { getStudent } from "../redux/actions/studentActions";
+import emptyImage from "../assets/images/empty.png"
+import { useMemo } from "react";
+import { useCallback } from "react";
+import { useRef } from "react";
+
+
 
 
 const SearchStudent = () => {
+  //styled start
   const Searchwrapper = styled.section`
     position: relative;
     background-color: white;
@@ -39,18 +48,58 @@ const SearchStudent = () => {
       }
     }
   `;
+  //styled end
 
-  return (
+  //fetch student details
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(getStudent());
+  },[]);
+
+
+
+  //get student list from store  
+  const studentList = useSelector((state)=>{
+    return state.student;
+  })
+
+ //calling search student query
+ const [list, setList] = useState("");
+
+ const findStudent=(e)=>{
+  const {value} = e.target;
+  setList(value);
+}
+
+const searchResult = studentList.filter((val, index) => {
+  return list !== "" ? val.name.includes(list) : val;
+});
+
+
+//display search data using condition
+let displayData;
+if(searchResult.length==0){
+  displayData=<img src={emptyImage} alt="empty list" className="emptyImage"/>
+}
+else{
+  displayData=searchResult.map((val,idx)=>{
+      return <Item key={idx} id={idx} data={val}/>
+  })
+}
+
+
+
+ return (
     <Searchwrapper>
           <Container className="search_section common_margin">
             <div className="search_area">
-              <FormControl sx={{ m: 1, width: "40ch" }} variant="standard">
-                <InputLabel htmlFor="standard-adornment-password">
+              <FormControl sx={{ m: 1, width: "40ch" }} onChange={findStudent} >
+                <InputLabel htmlFor="student">
                   Search student By Name...
                 </InputLabel>
                 <Input
-                  id="standard-adornment-password"
                   type="search"
+                  value={list}
                   endAdornment={
                     <InputAdornment position="end">
                       <IconButton aria-label="toggle password visibility">
@@ -62,14 +111,12 @@ const SearchStudent = () => {
               </FormControl>
             </div>
             <div className="item_container">
-              <Item />
-              <Item />
-              <Item />
-              <Item />
-              <Item />
-              <Item />
-              <Item />
+              {
+                displayData
+              }
             </div>
+
+           
           </Container>
     </Searchwrapper>
   );

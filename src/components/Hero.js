@@ -70,6 +70,7 @@ const Hero = () => {
                     Topper
                 </Button>
                 <Typography variant="h3" className='mt-3'>
+                
                         <Typewriter options={{
                             autoStart:true,
                             loop:true,
