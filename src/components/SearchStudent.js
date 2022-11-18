@@ -13,8 +13,6 @@ import rightbg from "../assets/images/right-bg.png";
 import { useDispatch, useSelector } from "react-redux";
 import { getStudent } from "../redux/actions/studentActions";
 import emptyImage from "../assets/images/empty.png"
-import { useMemo } from "react";
-import { useCallback } from "react";
 import { useRef } from "react";
 
 
@@ -37,14 +35,16 @@ const SearchStudent = () => {
         input {
           height: 2rem;
           color: ${({ theme }) => theme.colors.text7};
+          border:none;
+          border-bottom:1px solid ${({ theme }) => theme.colors.text7};
+          width:40%;
+          margin-bottom:20px;
+          padding-bottom:10px;
+          &:focus{
+            outline:none;
+          }
         }
-        .Mui-focused {
-          color: ${({ theme }) => theme.colors.header};
-          transform: scale(1);
-        }
-        .css-1ptx2yq-MuiInputBase-root-MuiInput-root::after {
-          border-bottom: 4px solid ${({ theme }) => theme.colors.headeractive};
-        }
+       
       }
     }
   `;
@@ -87,28 +87,18 @@ else{
   })
 }
 
+const inputVal = useRef("");
+console.log(inputVal.current.input);
 
+useEffect(()=>{
+  inputVal.current.focus();
+},[list])
 
  return (
     <Searchwrapper>
           <Container className="search_section common_margin">
             <div className="search_area">
-              <FormControl sx={{ m: 1, width: "40ch" }} onChange={findStudent} >
-                <InputLabel htmlFor="student">
-                  Search student By Name...
-                </InputLabel>
-                <Input
-                  type="search"
-                  value={list}
-                  endAdornment={
-                    <InputAdornment position="end">
-                      <IconButton aria-label="toggle password visibility">
-                        <SearchIcon />
-                      </IconButton>
-                    </InputAdornment>
-                  }
-                />
-              </FormControl>
+              <input type="text" placeholder="Search student by name..." ref={inputVal} value={list} onChange={findStudent}/>
             </div>
             <div className="item_container">
               {
