@@ -63,6 +63,7 @@ body{
   flex-direction:row;
   flex-wrap:wrap;
   justify-content:center;
+  margin:10px 0px 20px 0px;
 }
 
 .item_container .emptyImage{

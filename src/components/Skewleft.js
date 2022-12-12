@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Skewleft = () => {
   const Skew1 = styled.section`
   width:100%;
- height:100px;
+ height:50px;
  position:absolute;
  left:0px;
  top:0px;
@@ -14,10 +14,10 @@ const Skewleft = () => {
  `;
  const Skew2 = styled.section`
  width:100%;
-height:100px;
+height:50px;
 position:absolute;
 left:0px;
-top:100px;
+top:50px;
 right:0px;
 background: linear-gradient(to right bottom, #5a1466  49%, white 50%);
 

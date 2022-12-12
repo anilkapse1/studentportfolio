@@ -14,6 +14,7 @@ const Footer = () => {
   const Footerwrapper=styled.section`
   background-color:${({theme})=>theme.colors.text7};
   display:flex;
+  height:100vh;
   .widget{
     display:flex;
     flex-wrap:wrap;

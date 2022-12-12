@@ -13,7 +13,7 @@ const Areacounting = () => {
         display:flex;
         position:relative;
         .counting_section{
-            margin-top:270px;
+            margin-top:120px;
             .parent{
                 div{
                 }

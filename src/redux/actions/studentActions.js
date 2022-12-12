@@ -16,3 +16,5 @@ export const loadStudent=(student)=>({
     type:GET_STUDENT,
     student
 });
+
+

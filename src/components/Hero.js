@@ -14,8 +14,8 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
     const Hero=styled.section`
-        margin-top:66px;
-        height: 100vh;
+        margin-top:64px;
+        height: calc(100vh - 64px);
         position: relative;
         background-image:url(${rightbg});
         background-size: contain;

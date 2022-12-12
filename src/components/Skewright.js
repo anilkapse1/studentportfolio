@@ -4,17 +4,17 @@ import styled from 'styled-components'
 const Skewright = () => {
   const Skew1 = styled.section`
   width:100%;
- height:100px;
+ height:50px;
  position:absolute;
  left:0px;
- bottom:101px;
+ bottom:50px;
  right:0px;
  background: linear-gradient(to left top, #e1e1e1  49%, white 50%);
  
  `;
  const Skew2 = styled.section`
  width:100%;
-height:100px;
+height:50px;
 position:absolute;
 left:0px;
 bottom:0px;
