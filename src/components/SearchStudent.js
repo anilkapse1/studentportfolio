@@ -12,15 +12,11 @@ import leftbg from "../assets/images/left-bg.png";
 import rightbg from "../assets/images/right-bg.png";
 import { useDispatch, useSelector } from "react-redux";
 import { getStudent } from "../redux/actions/studentActions";
-import emptyImage from "../assets/images/empty.png"
+import emptyImage from "../assets/images/empty.png";
 import { useRef } from "react";
 import { PageIndex } from "../Context";
 import { useContext } from "react";
 import Postpagination from "./Postpagination";
-
-
-
-
 
 const SearchStudent = () => {
   //styled start
@@ -31,7 +27,7 @@ const SearchStudent = () => {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
-    display:flex;
+    display: flex;
 
     .search_section {
       .search_area {
@@ -39,104 +35,109 @@ const SearchStudent = () => {
         input {
           height: 2rem;
           color: ${({ theme }) => theme.colors.text7};
-          border:none;
-          border-bottom:1px solid ${({ theme }) => theme.colors.text7};
-          width:40%;
-          margin-bottom:20px;
-          padding-bottom:10px;
-          &:focus{
-            outline:none;
+          border: none;
+          border-bottom: 1px solid ${({ theme }) => theme.colors.text7};
+          width: 40%;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          &:focus {
+            outline: none;
           }
         }
-       
       }
     }
   `;
   //styled end
 
-
-
   //fetch student details
   const dispatch = useDispatch();
-  useEffect(()=>{
+  useEffect(() => {
     dispatch(getStudent());
-  },[]);
+  }, []);
+
+  //context page number
+  const { page,setPage } = useContext(PageIndex);
+  const inputVal = useRef("");
 
 
 
-  //get student list from store  
-  const studentList = useSelector((state)=>{
+  //get student list from store
+  const studentList = useSelector((state) => {
     return state.student;
-  })
+  });
 
- //calling search student query
- const [list, setList] = useState("");
+  //------
+  //------calling search student query
+  const [list, setList] = useState("");
 
- const findStudent=(e)=>{
-  const {value} = e.target;
-  setList(value);
-}
+  const findStudent = (e) => {
+    const { value } = e.target;
+    setList(value);
+    setPage(1);
+  };
 
-const searchResult = studentList.filter((val, index) => {
-  return list !== "" ? (val.name.includes(list) || val.area.includes(list)) : val;
-});
+  const searchResult = studentList.filter((val, index) => {
+    return list !== ""
+      ? val.name.includes(list) || val.area.includes(list)
+      : val;
+  });
 
-//pagination code start
- const [loading, setLoading] = useState(false);
- const [currentPage, setCurrentPage] = useState(1);
- const [postsPerPage, setPostsPerPage] = useState(6);
+  //------
+  //------pagination code start
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(6);
 
-  // Get current post
   const indexOfLastPost = currentPage * postsPerPage;
-  //10
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  //0
   const currentPosts = searchResult.slice(indexOfFirstPost, indexOfLastPost);
-  //0-10
 
-  const { page, setPage } = useContext(PageIndex);
   useEffect(() => {
     setCurrentPage(page);
-    console.log("click page number", page);
+    inputVal.current.focus();
   }, [page]);
+  // pagination code end
 
-// pagination code end
+  //------
+  //------display search data using condition
+  let displayData;
+  if (searchResult.length == 0) {
+    displayData = (
+      <img src={emptyImage} alt="empty list" className="emptyImage" />
+    );
+  } else {
+    displayData = currentPosts.map((val, idx) => {
+      return <Item key={idx} id={idx} data={val} />;
+    });
+  }
 
-//display search data using condition
-let displayData;
-if(searchResult.length==0){
-  displayData=<img src={emptyImage} alt="empty list" className="emptyImage"/>
-}
-else{
-  displayData=currentPosts.map((val,idx)=>{
-      return <Item key={idx} id={idx} data={val}/>
-  })
-}
+  useEffect(() => {
+    inputVal.current.focus();
+  }, [list]);
 
-const inputVal = useRef("");
 
-useEffect(()=>{
-  inputVal.current.focus();
-},[list])
 
- return (
+  return (
     <Searchwrapper>
-          <Container className="search_section common_margin">
-            <div className="search_area">
-              <input type="search" placeholder="Search student by name..." ref={inputVal} value={list} onChange={findStudent}/>
-            </div>
-            <div className="item_container">
-              {
-                displayData
-              }
-            </div>
-            <div className="pagination_container">
-              {
-                <Postpagination postsPerPage={postsPerPage} totalPost={searchResult.length} />
-              }
-            </div>
-
-          </Container>
+      <Container className="search_section common_margin">
+        <div className="search_area">
+          <input
+            type="search"
+            placeholder="Search student by name or area..."
+            ref={inputVal}
+            value={list}
+            onChange={findStudent}
+          />
+        </div>
+        <div className="item_container">{displayData}</div>
+        <div className="pagination_container">
+          {
+            <Postpagination
+              postsPerPage={postsPerPage}
+              totalPost={searchResult.length}
+            />
+          }
+        </div>
+      </Container>
     </Searchwrapper>
   );
 };

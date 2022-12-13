@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import { PageIndex } from "../Context";
 
 
-const Postpagination = ({ postsPerPage, totalPost, paginate }) => {
+const Postpagination = ({ postsPerPage, totalPost}) => {
   const { page, setPage } = useContext(PageIndex);
 
   const pageNumber = [];
