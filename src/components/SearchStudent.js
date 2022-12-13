@@ -78,7 +78,7 @@ const SearchStudent = () => {
 }
 
 const searchResult = studentList.filter((val, index) => {
-  return list !== "" ? val.name.includes(list) : val;
+  return list !== "" ? (val.name.includes(list) || val.area.includes(list)) : val;
 });
 
 //pagination code start

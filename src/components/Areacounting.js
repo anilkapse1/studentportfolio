@@ -3,10 +3,9 @@ import Container from "react-bootstrap/Container";
 import styled from "styled-components";
 import Skewleft from './Skewleft';
 import Typography from '@mui/material/Typography';
-import award from '../assets/images/award.jpg'
-import award1 from '../assets/images/award1.png'
-import award2 from '../assets/images/award2.png'
-import award3 from '../assets/images/award3.png'
+import { useSelector } from 'react-redux';
+import Areacountingtiles from './Areacountingtiles';
+
 
 const Areacounting = () => {
     const Countingwrapper = styled.section`
@@ -72,6 +71,17 @@ const Areacounting = () => {
     
     `;
 
+    //fetch student list from store
+    const studentList = useSelector((state)=>{
+        return state.student;
+    })
+
+    const groupArea = studentList.reduce((acc,value)=>{
+        (acc[value.area]=acc[value.area] || []).push(value);
+          return acc
+    },[])
+
+
   return (
     <Countingwrapper>
         <Skewleft/>
@@ -82,97 +92,12 @@ const Areacounting = () => {
                     <span>No. of student by Area</span>
                 </div>
                 <div className='list_details'>
-                <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
-                    <section className='list'>
-                        <div className='image_container'>
-                            <img src={award} alt="demko"/>
-                            <span>98</span>
-                        </div>
-                        <span>khattalawada</span>                        
-                    </section>
+                    {
+                        Object.keys(groupArea).map((key,idx)=>{
+                            return <Areacountingtiles key={idx} villageName={key} noOfStudent={groupArea[key].length}/>;
+                        })
+                    }
+                    
                 </div>
             </div>
         </Container>

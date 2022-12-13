@@ -44,7 +44,7 @@ const Header = () => {
             <Container>
                 <nav>
                     <ul>
-                        <li><NavLink to="/studentportfolio">Home</NavLink></li>
+                        <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/stream">Stream</NavLink></li>
                         <li><NavLink to="/area">Area</NavLink></li>
                         <li><NavLink to="/topper">Topper</NavLink></li>
