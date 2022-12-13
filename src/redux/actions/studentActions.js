@@ -4,7 +4,7 @@ import { GET_STUDENT } from "../utils/constants";
 export const getStudent=()=>{
     return async(dispatch)=>{
         try{    
-            const {data} = await axios.get("../student.json");
+            const {data} = await axios.get("/student.json");
             dispatch(loadStudent(data));
         }catch(error){
             console.log(error);
