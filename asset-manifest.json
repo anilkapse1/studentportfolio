@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.c59cc657.css",
-    "main.js": "/static/js/main.0a85ae0b.js",
-    "static/media/book.png": "/static/media/book.c6ec8ef825c89de7d30e.png",
-    "static/media/award1.png": "/static/media/award1.7c3fdabbe2e82f9260ee.png",
-    "static/media/empty.png": "/static/media/empty.b50f47a3dadb6bdcf233.png",
-    "static/media/award.jpg": "/static/media/award.dcff1b917ba775cd87d3.jpg",
-    "static/media/footer_logo.png": "/static/media/footer_logo.158b271a72f26621f3a6.png",
-    "static/media/award3.png": "/static/media/award3.5c640383ff83fb13cc78.png",
-    "static/media/award2.png": "/static/media/award2.644b5282758ff77b5dd9.png",
-    "static/media/left-bg.png": "/static/media/left-bg.1571de8447cfa343b0a2.png",
-    "static/media/user.png": "/static/media/user.614d3955d75819c3f4c1.png",
-    "static/media/logo.png": "/static/media/logo.e371ef5b7aa08aff7626.png",
-    "index.html": "/index.html",
-    "main.c59cc657.css.map": "/static/css/main.c59cc657.css.map",
-    "main.0a85ae0b.js.map": "/static/js/main.0a85ae0b.js.map"
+    "main.css": "/studentportfolio/static/css/main.c59cc657.css",
+    "main.js": "/studentportfolio/static/js/main.78541928.js",
+    "static/media/book.png": "/studentportfolio/static/media/book.c6ec8ef825c89de7d30e.png",
+    "static/media/award1.png": "/studentportfolio/static/media/award1.7c3fdabbe2e82f9260ee.png",
+    "static/media/empty.png": "/studentportfolio/static/media/empty.b50f47a3dadb6bdcf233.png",
+    "static/media/award.jpg": "/studentportfolio/static/media/award.dcff1b917ba775cd87d3.jpg",
+    "static/media/footer_logo.png": "/studentportfolio/static/media/footer_logo.158b271a72f26621f3a6.png",
+    "static/media/award3.png": "/studentportfolio/static/media/award3.5c640383ff83fb13cc78.png",
+    "static/media/award2.png": "/studentportfolio/static/media/award2.644b5282758ff77b5dd9.png",
+    "static/media/left-bg.png": "/studentportfolio/static/media/left-bg.1571de8447cfa343b0a2.png",
+    "static/media/user.png": "/studentportfolio/static/media/user.614d3955d75819c3f4c1.png",
+    "static/media/logo.png": "/studentportfolio/static/media/logo.e371ef5b7aa08aff7626.png",
+    "index.html": "/studentportfolio/index.html",
+    "main.c59cc657.css.map": "/studentportfolio/static/css/main.c59cc657.css.map",
+    "main.78541928.js.map": "/studentportfolio/static/js/main.78541928.js.map"
   },
   "entrypoints": [
     "static/css/main.c59cc657.css",
-    "static/js/main.0a85ae0b.js"
+    "static/js/main.78541928.js"
   ]
 }
