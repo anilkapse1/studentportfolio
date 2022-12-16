@@ -8,7 +8,7 @@ const Item = ({data}) => {
           <div className='front'>
             <h1>{first_letter}</h1>
             <div className='front_data'>
-                <p>Hi, I'm {name} {middle_name} {surname} from {area}, pursuing {std} {stream} from {college_name} from {university}.</p>
+                <p>Hi, I'm {name} {middle_name} {surname} from {area}, pursuing {std} {stream} from {college_name} from {university} university.</p>
             </div>
         </div>
         <div className='back'>
