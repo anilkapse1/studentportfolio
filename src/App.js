@@ -36,6 +36,7 @@ const App = () => {
     <GlobalStyle/>
     <BrowserRouter>
             <Header/>
+            <Hero/>
             <Routes>
               <Route path="/studentportfolio" element={<Home/>}/>
               <Route path="/stream" element={<Stream/>}/>
