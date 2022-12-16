@@ -175,8 +175,11 @@ body{
   padding: 0px 6px;
   position: relative;
   font-size:14px;
-  
-} 
+}
+
+.item_container section .back .profile_data span:last-child{
+  text-transform:uppercase;
+}
 
 
 

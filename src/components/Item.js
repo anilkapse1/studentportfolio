@@ -16,7 +16,7 @@ const Item = ({data}) => {
                 <img src={profile_image} alt="student image"/>
             </div>
             <div className='profile_data'>
-              <span>{std}</span><span>{stream}</span><span>{area}</span>
+            <span>{name}</span><span>{std}</span><span>{stream}</span><span>{area}</span>
             </div>
         </div>
     </section>
