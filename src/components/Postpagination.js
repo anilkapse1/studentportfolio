@@ -14,7 +14,6 @@ const Postpagination = ({ postsPerPage, totalPost}) => {
   }
 
   const handleChange = (event, value) => {
-    console.log("onchange page number", value);
     setPage(value);
   };
 

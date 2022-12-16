@@ -1,8 +1,6 @@
 import React from 'react'
-import user from '../assets/images/user.png'
 
 const Item = ({data}) => {
-  console.log('from item components');
   const {id,name,middle_name,surname,area,stream,std,topper,university,achievement_details,achievement_image,college_name,profile_image} = data;
   let first_letter=name.substr(0,1);
   return (

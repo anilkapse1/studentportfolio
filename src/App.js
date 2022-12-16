@@ -5,13 +5,12 @@ import Area from './pages/Area'
 import Topper from './pages/Topper'
 import Announcement from './pages/Announcement'
 import Team from './pages/Team'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import {BrowserRouter,Routes,Route, useLocation} from 'react-router-dom'
 import Header from './components/Header'
 import {ThemeProvider} from 'styled-components'
 import { GlobalStyle } from './GlobalStyle'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
-
 
 
 const App = () => {
@@ -31,12 +30,12 @@ const App = () => {
     }
   }
 
+
   return (
     <ThemeProvider theme={theme}>
     <GlobalStyle/>
     <BrowserRouter>
             <Header/>
-            <Hero/>
             <Routes>
               <Route path="/studentportfolio" element={<Home/>}/>
               <Route path="/stream" element={<Stream/>}/>

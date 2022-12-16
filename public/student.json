@@ -1,7 +1,7 @@
 [
     {
        "id":"kh01",
-       "name":"anil",
+       "name":"rohan",
        "middle_name":"ramesh",
        "surname":"kapse",
        "area":"khattalawada",
@@ -12,7 +12,7 @@
        "achievement_details":"",
        "achievement_image":"",
        "college_name":"viva",
-       "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+       "profile_image":"assets/images/user.png"
     },
     {
         "id":"kh02",
@@ -27,7 +27,7 @@
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+        "profile_image":"assets/images/user.png"
  
      },
      {
@@ -43,7 +43,7 @@
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+        "profile_image":"assets/images/user.png"
 
  
      },
@@ -60,7 +60,7 @@
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+        "profile_image":"assets/images/user.png"
 
      },
      {
@@ -76,12 +76,12 @@
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+        "profile_image":"assets/images/user.png"
 
      },
      {
         "id":"fa02",
-        "name":"mitali",
+        "name":"mitaliraj",
         "middle_name":"kailash",
         "surname":"godkar",
         "area":"fansa",
@@ -92,7 +92,7 @@
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+        "profile_image":"assets/images/user.png"
      },
      {
         "id":"fa02",
@@ -107,7 +107,7 @@
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+        "profile_image":"assets/images/user.png"
      },
      {
       "id":"fa02",
@@ -122,7 +122,7 @@
       "achievement_details":"",
       "achievement_image":"",
       "college_name":"viva",
-      "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+      "profile_image":"assets/images/user.png"
 
    }
 ,
@@ -139,7 +139,7 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+   "profile_image":"assets/images/user.png"
 },
 {
    "id":"fa02",
@@ -154,7 +154,7 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+   "profile_image":"assets/images/user.png"
  
  },
  {
@@ -170,7 +170,7 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+   "profile_image":"assets/images/user.png"
  },
  {
    "id":"fa02",
@@ -185,7 +185,7 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+   "profile_image":"assets/images/user.png"
  }
  ,
  {
@@ -201,7 +201,7 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"https://kapsecode.com/wp-content/uploads/2020/12/69381782.jpg"
+   "profile_image":"assets/images/user.png"
  }
 
 ]

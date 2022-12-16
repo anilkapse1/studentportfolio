@@ -92,9 +92,9 @@ const SearchStudent = () => {
   const currentPosts = searchResult.slice(indexOfFirstPost, indexOfLastPost);
 
   useEffect(() => {
-    setCurrentPage(page);
     inputVal.current.focus();
-  }, [page]);
+    setCurrentPage(page);
+  }, [page,searchResult]);
   // pagination code end
 
   //------
