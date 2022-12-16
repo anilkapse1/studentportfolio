@@ -66,18 +66,18 @@ const Footer = () => {
             <img src={footer_logo} alt="demo"/>
           </section>
           <section>
-            <h1>weebly themes</h1>
-            <span>pre-sale faqs</span>
-            <span>submit a ticket</span>
+            <h1>Weekly update</h1>
+            <span>UPSC Key- December 15, 2022</span>
+            <span></span>
           </section>
           <section>
-            <h1>services</h1>
-            <span>theme tweak</span>
+            <h1>topper</h1>
+            <span>topper list</span>
           </section>
           <section>
-            <h1>showcase</h1>
-            <span>widgetkit</span>
-            <span>support</span>
+            <h1>announcement</h1>
+            <span>mba entrance exam 2022</span>
+            <span></span>
           </section>
         </div>
         <div className='copyright'>
@@ -88,7 +88,7 @@ const Footer = () => {
             <ShareRoundedIcon />
           </Fab>
           <div className='my-4'>
-            <span>Handcrafted with <FavoriteIcon/> kapsecode.com</span>
+            <span>Handcrafted with <FavoriteIcon/> kapsecode.com &copy; {new Date().getFullYear()}</span>
           </div>
         </div>
 
