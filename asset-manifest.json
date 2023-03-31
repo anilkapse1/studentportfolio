@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/studentportfolio/static/css/main.c59cc657.css",
-    "main.js": "/studentportfolio/static/js/main.3b2a1d9a.js",
+    "main.css": "/studentportfolio/static/css/main.6a4b34b0.css",
+    "main.js": "/studentportfolio/static/js/main.b1f8268a.js",
     "static/media/book.png": "/studentportfolio/static/media/book.c6ec8ef825c89de7d30e.png",
     "static/media/award1.png": "/studentportfolio/static/media/award1.7c3fdabbe2e82f9260ee.png",
     "static/media/empty.png": "/studentportfolio/static/media/empty.b50f47a3dadb6bdcf233.png",
@@ -11,12 +11,16 @@
     "static/media/award2.png": "/studentportfolio/static/media/award2.644b5282758ff77b5dd9.png",
     "static/media/left-bg.png": "/studentportfolio/static/media/left-bg.1571de8447cfa343b0a2.png",
     "static/media/logo.png": "/studentportfolio/static/media/logo.e371ef5b7aa08aff7626.png",
+    "static/media/slick.svg": "/studentportfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/studentportfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/studentportfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/studentportfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/studentportfolio/index.html",
-    "main.c59cc657.css.map": "/studentportfolio/static/css/main.c59cc657.css.map",
-    "main.3b2a1d9a.js.map": "/studentportfolio/static/js/main.3b2a1d9a.js.map"
+    "main.6a4b34b0.css.map": "/studentportfolio/static/css/main.6a4b34b0.css.map",
+    "main.b1f8268a.js.map": "/studentportfolio/static/js/main.b1f8268a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c59cc657.css",
-    "static/js/main.3b2a1d9a.js"
+    "static/css/main.6a4b34b0.css",
+    "static/js/main.b1f8268a.js"
   ]
 }
