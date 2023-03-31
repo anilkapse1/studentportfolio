@@ -3,7 +3,9 @@ import Container from 'react-bootstrap/Container';
 
 const Announcement = () => {
   return (
-    <Container>Announcement</Container>
+    <Container>
+      <h1>hello</h1>
+    </Container>
   )
 }
 

@@ -2,11 +2,9 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
-import Item from '../components/Item';
 import leftbg from "../assets/images/left-bg.png";
 import { useEffect } from 'react';
 import { getStudent } from '../redux/actions/studentActions';
-import Typography from '@mui/material/Typography';
 import Streamseparation from '../components/Streamseparation';
 
 
