@@ -1,10 +1,12 @@
 import React from 'react'
 
 const Item = ({data}) => {
+  console.log(data);
+
   const {id,name,middle_name,surname,area,stream,std,topper,university,achievement_details,achievement_image,college_name,profile_image} = data;
   let first_letter=name.substr(0,1);
   return (
-    <section>
+     <section>
           <div className='front'>
             <h1>{first_letter}</h1>
             <div className='front_data'>
@@ -20,6 +22,7 @@ const Item = ({data}) => {
             </div>
         </div>
     </section>
+
   )
 }
 

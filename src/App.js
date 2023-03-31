@@ -11,6 +11,7 @@ import {ThemeProvider} from 'styled-components'
 import { GlobalStyle } from './GlobalStyle'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
+import Demo from './components/Demo'
 
 
 const App = () => {
