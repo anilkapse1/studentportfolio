@@ -63,7 +63,8 @@ body{
   flex-direction:row;
   flex-wrap:wrap;
   justify-content:center;
-  margin:10px 0px 20px 0px;
+  gap:20px;
+  margin:20px 0px;
 }
 
 .item_container .emptyImage{
@@ -73,7 +74,6 @@ body{
 .item_container section{
   flex:1 1 30%;
   border-radius: 10px;
-  margin: 25px 25px 0px 0px;
   position: relative;
   overflow: hidden;
   height: 240px;
@@ -197,7 +197,8 @@ body{
 
 {/*Style for item end*/}
 
-{/*Style for scroll snap*/}
+
+
 
 
 

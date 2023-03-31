@@ -21,7 +21,6 @@ const Areacounting = () => {
                     h3{
                     color:${({theme})=>theme.colors.headeractive};
                     font-family:inherit;
-                    margin:0!important;
                     }
                     span{
                         color:${({theme})=>theme.colors.text7};
