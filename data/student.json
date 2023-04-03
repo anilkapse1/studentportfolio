@@ -4,6 +4,7 @@
       "name":"taha",
       "middle_name":"",
       "surname":"momin",
+      "gender":"male",
       "area":"khattalawada",
       "stream":"commerce",
       "std":"6",
@@ -13,12 +14,13 @@
       "achievement_details":"",
       "achievement_image":"",
       "college_name":"viva",
-      "profile_image":"assets/images/user.png"
+      "profile_image":"assets/images/male.png"
    },   {
       "id":"kh01",
-      "name":"taha",
+      "name":"rajesh",
       "middle_name":"",
-      "surname":"momin",
+      "surname":"rohit",
+      "gender":"male",
       "area":"khattalawada",
       "stream":"commerce",
       "std":"6",
@@ -28,14 +30,15 @@
       "achievement_details":"",
       "achievement_image":"",
       "college_name":"viva",
-      "profile_image":"assets/images/user.png"
+      "profile_image":"assets/images/male.png"
    },
    {
       "id":"kh01",
-      "name":"taha",
+      "name":"naran",
       "middle_name":"",
-      "surname":"momin",
-      "area":"khattalawada",
+      "surname":"rohit",
+      "gender":"male",
+      "area":"chala",
       "stream":"commerce",
       "std":"11",
       "group":"Higher secondary Stage",
@@ -44,13 +47,14 @@
       "achievement_details":"",
       "achievement_image":"",
       "college_name":"viva",
-      "profile_image":"assets/images/user.png"
+      "profile_image":"assets/images/male.png"
    },
   {
         "id":"kh02",
-        "name":"anil",
+        "name":"nita",
         "middle_name":"",
         "surname":"kapse",
+        "gender":"female",
         "area":"sarigam",
         "stream":"Mba",
         "std":"1st year",
@@ -60,7 +64,7 @@
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"assets/images/user.png"
+        "profile_image":"assets/images/male.png"
  
      },
      {
@@ -68,24 +72,26 @@
         "name":"sunish",
         "middle_name":"",
         "surname":"narayanan",
+        "gender":"male",
         "area":"phansa",
         "stream":"english",
         "std":"1",
         "group":"Primary stage",
-        "topper":false,
+        "topper":true,
         "university":"kochi",
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"assets/images/user.png"
+        "profile_image":"assets/images/male.png"
 
  
      },
      {
         "id":"kh04",
-        "name":"ankit",
+        "name":"parvati",
         "middle_name":"",
         "surname":"yadav",
+        "gender":"female",
         "area":"dehri",
         "stream":"english",
         "std":"5",
@@ -95,7 +101,7 @@
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"assets/images/user.png"
+        "profile_image":"assets/images/male.png"
 
      },
      {
@@ -103,6 +109,7 @@
         "name":"jay",
         "middle_name":"",
         "surname":"godkar",
+        "gender":"male",
         "area":"dehri",
         "stream":"hindi",
         "std":"8",
@@ -112,30 +119,32 @@
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"assets/images/user.png"
+        "profile_image":"assets/images/male.png"
 
      },
      {
         "id":"fa02",
-        "name":"mitaliraj",
+        "name":"mitali",
         "middle_name":"",
-        "surname":"godkar",
+        "surname":"rohit",
+        "gender":"female",
         "area":"vapi",
         "stream":"science",
         "std":"11",
         "group":"Higher secondary Stage",
-        "topper":false,
+        "topper":true,
         "university":"gujarat",
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"assets/images/user.png"
+        "profile_image":"assets/images/male.png"
      },
      {
         "id":"fa02",
-        "name":"sunaya",
+        "name":"sumitra",
         "middle_name":"",
         "surname":"narayanan",
+        "gender":"female",
         "area":"vapi",
         "stream":"mbs",
         "std":"2nd year",
@@ -145,13 +154,14 @@
         "achievement_details":"",
         "achievement_image":"",
         "college_name":"viva",
-        "profile_image":"assets/images/user.png"
+        "profile_image":"assets/images/male.png"
      },
      {
       "id":"fa02",
       "name":"naimish",
       "middle_name":"",
       "surname":"dave",
+      "gender":"male",
       "area":"pali",
       "stream":"B.com",
       "std":"FY Bcom",
@@ -161,7 +171,7 @@
       "achievement_details":"",
       "achievement_image":"",
       "college_name":"viva",
-      "profile_image":"assets/images/user.png"
+      "profile_image":"assets/images/male.png"
 
    }
 ,
@@ -169,7 +179,8 @@
    "id":"kh01",
    "name":"pradeep",
    "middle_name":"",
-   "surname":"kumar",
+   "surname":"yadav",
+   "gender":"male",
    "area":"chala",
    "stream":"medical science",
    "std":"2nd Year",
@@ -179,13 +190,14 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"assets/images/user.png"
+   "profile_image":"assets/images/male.png"
 },
 {
    "id":"fa02",
    "name":"shital",
    "middle_name":"",
-   "surname":"aher",
+   "surname":"patel",
+   "gender":"female",
    "area":"mota ponda",
    "stream":"B.com",
    "std":"S.Y.Bcom",
@@ -195,7 +207,7 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"assets/images/user.png"
+   "profile_image":"assets/images/male.png"
  
  },
  {
@@ -203,6 +215,7 @@
    "name":"Sarathlal",
    "middle_name":"",
    "surname":"saseendran",
+   "gender":"male",
    "area":"karvad",
    "stream":"hindi",
    "std":"3",
@@ -212,13 +225,14 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"assets/images/user.png"
+   "profile_image":"assets/images/male.png"
  },
  {
    "id":"fa02",
    "name":"mitali",
    "middle_name":"",
    "surname":"godkar",
+   "gender":"female",
    "area":"silvasa",
    "stream":"english",
    "std":"9",
@@ -228,13 +242,14 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"assets/images/user.png"
+   "profile_image":"assets/images/male.png"
  },
  {
    "id":"fa02",
    "name":"laxmi",
    "middle_name":"",
    "surname":"godkar",
+   "gender":"female",
    "area":"dadra",
    "stream":"hindi",
    "std":"9",
@@ -244,13 +259,14 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"assets/images/user.png"
+   "profile_image":"assets/images/male.png"
  },
  {
    "id":"fa02",
    "name":"laxmi",
    "middle_name":"",
    "surname":"godkar",
+   "gender":"female",
    "area":"dadra",
    "stream":"hindi",
    "std":"9",
@@ -260,12 +276,13 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"assets/images/user.png"
+   "profile_image":"assets/images/male.png"
  },{
    "id":"fa02",
    "name":"laxmi",
    "middle_name":"",
    "surname":"godkar",
+   "gender":"female",
    "area":"dadra",
    "stream":"hindi",
    "std":"9",
@@ -275,13 +292,14 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"assets/images/user.png"
+   "profile_image":"assets/images/male.png"
  },
  {
    "id":"fa02",
-   "name":"laxmi",
+   "name":"bharti",
    "middle_name":"",
    "surname":"godkar",
+   "gender":"female",
    "area":"dadra",
    "stream":"hindi",
    "std":"1",
@@ -291,39 +309,41 @@
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"assets/images/user.png"
+   "profile_image":"assets/images/male.png"
  },
  {
    "id":"fa02",
-   "name":"laxmi",
+   "name":"shweta",
    "middle_name":"",
-   "surname":"godkar",
+   "surname":"sharma",
+   "gender":"female",
    "area":"dadra",
    "stream":"hindi",
    "std":"9",
    "group":"secondary stage",
-   "topper":false,
+   "topper":true,
    "university":"kochi",
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"assets/images/user.png"
+   "profile_image":"assets/images/male.png"
  },
  {
    "id":"fa02",
-   "name":"laxmi",
+   "name":"tanvi",
    "middle_name":"",
-   "surname":"godkar",
+   "surname":"surve",
+   "gender":"female",
    "area":"dadra",
    "stream":"hindi",
    "std":"9",
    "group":"secondary stage",
-   "topper":false,
+   "topper":true,
    "university":"kochi",
    "achievement_details":"",
    "achievement_image":"",
    "college_name":"viva",
-   "profile_image":"assets/images/user.png"
+   "profile_image":"assets/images/male.png"
  }
 
 ]
