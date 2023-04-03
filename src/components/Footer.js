@@ -49,6 +49,9 @@ const Footer = () => {
     span{
       font-weight:200;
       color:white;
+      a{
+        color:white;
+      }
     }
     button{
       margin:0 15px;
@@ -88,7 +91,7 @@ const Footer = () => {
             <ShareRoundedIcon />
           </Fab>
           <div className='my-4'>
-            <span>Handcrafted with <FavoriteIcon/> kapsecode.com &copy; {new Date().getFullYear()}</span>
+            <span>Handcrafted with <FavoriteIcon/> <a href="https://anilkapse1.github.io/kapsecode/" target='_blank'>kapsecode.in</a> &copy; {new Date().getFullYear()}</span>
           </div>
         </div>
 
