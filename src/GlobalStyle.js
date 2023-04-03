@@ -87,7 +87,25 @@ body{
   background-position: right;
 }
 
+.item_container section .topper{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color:#f7f772;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    z-index:1;
+}
 
+@keyframes up-down{
+    0%{
+        transform:translateY(10px);
+        color:red;
+
+    }
+    100%{
+        transform:translateY(-10px)
+    }
+}
 
 
 .item_container section .front{
@@ -139,6 +157,8 @@ body{
   width: 100%;
   padding: 1rem;
 }
+
+
 
 .item_container section .back .profile_image{
   width: 115px;

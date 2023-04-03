@@ -80,7 +80,7 @@ const Streamseparation = ({data,id,groupName}) => {
         {
             data.map((val,idx)=>{
                 return (
-                        <Item key={idx} id={idx} data={val} />
+                    <Item key={idx} id={idx} data={val} />
                 )
             })
         }

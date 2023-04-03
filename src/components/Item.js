@@ -1,12 +1,19 @@
 import React from 'react'
+import StarIcon from '@mui/icons-material/Star';
+import male from '../assets/images/male.png'
+import female from '../assets/images/female.png'
 
 const Item = ({data}) => {
   console.log(data);
 
-  const {id,name,middle_name,surname,area,stream,std,topper,university,achievement_details,achievement_image,college_name,profile_image} = data;
+  const {id,name,middle_name,surname,gender,area,stream,std,topper,university,achievement_details,achievement_image,college_name,profile_image} = data;
   let first_letter=name.substr(0,1);
   return (
      <section>
+        <span className='topper'>
+          {topper && <StarIcon/>}
+        </span>  
+
           <div className='front'>
             <h1>{first_letter}</h1>
             <div className='front_data'>
@@ -15,10 +22,10 @@ const Item = ({data}) => {
         </div>
         <div className='back'>
             <div className='profile_image'>
-                <img src={profile_image} alt="student image"/>
+                {gender==="male"?<img src={male} alt="student image"/>:<img src={female} alt="girl student profile pic"/>}
             </div>
             <div className='profile_data'>
-            <span>{name}</span><span>{std}</span><span>{stream}</span><span>{area}</span>
+            <span>{name} {surname}</span><span>{std}</span><span>{stream}</span><span>{area}</span>
             </div>
         </div>
     </section>
