@@ -1,7 +1,10 @@
 import React from 'react'
 import StarIcon from '@mui/icons-material/Star';
-import male from '../assets/images/male.png'
-import female from '../assets/images/female.png'
+import boy from '../assets/images/male.png'
+import girl from '../assets/images/female.png'
+import toper from '../assets/images/topper.png'
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+
 
 const Item = ({data}) => {
   console.log(data);
@@ -11,9 +14,9 @@ const Item = ({data}) => {
   return (
      <section>
         <span className='topper'>
-          {topper && <StarIcon/>}
+          {topper && <img src={toper} alt="demo"/>}
         </span>  
-
+        
           <div className='front'>
             <h1>{first_letter}</h1>
             <div className='front_data'>
@@ -22,10 +25,10 @@ const Item = ({data}) => {
         </div>
         <div className='back'>
             <div className='profile_image'>
-                {gender==="male"?<img src={male} alt="student image"/>:<img src={female} alt="girl student profile pic"/>}
+                {gender==="boy"?<img src={boy} alt="student image"/>:<img src={girl} alt="girl student profile pic"/>}
             </div>
             <div className='profile_data'>
-            <span>{name} {surname}</span><span>{std}</span><span>{stream}</span><span>{area}</span>
+            <span>{name} {surname}</span><span>{stream}</span><span>{area}</span>
             </div>
         </div>
     </section>

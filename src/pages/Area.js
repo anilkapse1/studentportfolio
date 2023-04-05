@@ -8,6 +8,8 @@ import { getStudent } from '../redux/actions/studentActions';
 import Streamseparation from '../components/Streamseparation';
 import emptyImage from "../assets/images/empty.png";
 import Filterarea from '../components/Filterarea';
+import Herosmall from '../components/Herosmall';
+
 
 
 
@@ -19,6 +21,12 @@ const Area = () => {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top left;
+    .filter_area{
+      margin-bottom:30px;
+      .css-fyalig{
+        margin:0px;
+      }
+    }
 
     
 `;
@@ -33,12 +41,16 @@ useEffect(() => {
 const studentList = useSelector((state) => {
   return state.student;
 });
-console.log('student list');
-console.log(studentList);
-
 
 
 const [filteredarea, setFilteredArea] = useState("khattalawada")
+
+//get total no of student from area
+const totalStudentbyarea = studentList.filter((val,idx)=>{
+  return val.area===filteredarea;
+})
+
+console.log(totalStudentbyarea.length);
 
 
 const groupArea = studentList.reduce((acc,value)=>{
@@ -48,14 +60,14 @@ const groupArea = studentList.reduce((acc,value)=>{
   return acc
 },[])
 
-console.log('area');
+console.log('area page');
 console.log(groupArea);
 const filterOption = Object.keys(groupArea);
 
 console.log('group by area',filteredarea);
 const result = groupArea[filteredarea];
-
 console.log(result);
+console.log('-------------------------');
 
 
   //------display search data using condition
@@ -77,18 +89,29 @@ console.log(result);
   }
 
   return (
+    <>
+    <Herosmall 
+      pageName="area"
+      areaName={filteredarea}
+      areaTotalStudent={totalStudentbyarea.length}
+      field="student"
+    />    
     <Areawrapper>
       <Container className='areawrapper common_margin'>
-      <Filterarea  
-        onFilterChange={filterChangeHandler}
-        selectedFiltered={filteredarea}
-        filterVal={filterOption}
-        />
+      <div className='filter_area'>
+        <Filterarea  
+          onFilterChange={filterChangeHandler}
+          selectedFiltered={filteredarea}
+          filterVal={filterOption}
+          />
+      </div>
       {
          displayData
       }
       </Container>
     </Areawrapper>
+
+    </>
   )
 }
 

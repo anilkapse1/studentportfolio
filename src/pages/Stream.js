@@ -6,6 +6,7 @@ import leftbg from "../assets/images/left-bg.png";
 import { useEffect } from 'react';
 import { getStudent } from '../redux/actions/studentActions';
 import Streamseparation from '../components/Streamseparation';
+import Herosmall from '../components/Herosmall';
 
 
 
@@ -51,6 +52,13 @@ console.log(Object.keys(groupArea));
 console.log(Object.values(groupArea));
 
 return (
+  <>
+    <Herosmall 
+      pageName="stream"
+      areaTotalStudent={studentList.length}
+      field="students from all area by category"
+      
+    />
     <Streamwrapper>
       <Container className='streamwrapper common_margin'>
         {
@@ -60,6 +68,8 @@ return (
         }
       </Container>
     </Streamwrapper>
+
+  </>
   )
 }
 

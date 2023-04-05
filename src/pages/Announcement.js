@@ -1,12 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
-import Typography from '@mui/material/Typography';
 import leftbg from "../assets/images/left-bg.png";
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Herosmall from '../components/Herosmall';
+import Announcementlist from '../components/Announcementlist';
+import Typography from '@mui/material/Typography';
 
 const Announcement = () => {
   const Announcementrwrapper=styled.div`
@@ -32,49 +30,53 @@ const Announcement = () => {
     margin-top: 20px;
   }
 
-
 `
+
+const [announcement, setAnnouncement]= useState([]);
+
+useEffect(()=>{
+  const fetchData= async()=>{
+    try{
+      const response = await fetch('./data/announcement.json');
+      const data = await response.json();
+      setAnnouncement(data.announcement)
+    }catch(err){
+      console.error(err);
+    }
+  }
+
+  fetchData();
+},[])
+
+console.log('announcement page');
+console.log(announcement);
+
+
   return (
+    <>
+    <Herosmall 
+      pageName="announcement"
+      areaTotalStudent={announcement.length}
+      field="announcement"
+    />
+
     <Announcementrwrapper>
       <Container className='announcementwrapper common_margin'>
         <Typography variant="h3" className='mt-3'>Announcement</Typography>
-        <span>below are the announcement list</span>
-
+        <span>below are the announcement list:</span>
         <div className='accordion_section'>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Accordion 1</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography>Accordion 2</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-    </div>
-
+        {
+          announcement.map((val,idx)=>{
+            return (
+              <Announcementlist key={idx} {...val}/>
+            )
+          })
+        }
+        </div>
       </Container>
     </Announcementrwrapper>
+
+    </>
   )
 }
 

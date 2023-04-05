@@ -11,6 +11,7 @@ import { useRef } from "react";
 import { PageIndex } from "../Context";
 import { useContext } from "react";
 import Postpagination from "./Postpagination";
+import Typography from '@mui/material/Typography';
 
 const SearchStudent = () => {
   //styled start
@@ -39,6 +40,19 @@ const SearchStudent = () => {
           }
         }
       }
+      .label{
+                    margin-bottom:15px;
+                    h3{
+                    color:${({theme})=>theme.colors.headeractive};
+                    font-family:inherit;
+                    }
+                    span{
+                        color:${({theme})=>theme.colors.text7};
+                        position: relative;
+                        font-size:14px;
+
+                    }
+                }
     }
   `;
   //styled end
@@ -72,7 +86,7 @@ const SearchStudent = () => {
 
   const searchResult = studentList.filter((val, index) => {
     return list !== ""
-      ? val.name.includes(list) || val.area.includes(list) 
+      ? val.name.includes(list) || val.area.includes(list) || val.surname.includes(list) || val.gender.includes(list)
       : val;
   });
 
@@ -113,6 +127,10 @@ const SearchStudent = () => {
   return (
     <Searchwrapper>
       <Container className="search_section common_margin">
+      <div className='label'>
+                    <Typography variant="h3" className='mt-3'>Let's check</Typography>
+                    <span>search student by Area or name</span>
+                </div>
         <div className="search_area">
           <input
             type="search"

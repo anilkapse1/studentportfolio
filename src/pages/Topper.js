@@ -7,6 +7,7 @@ import { getStudent } from '../redux/actions/studentActions';
 import Item from '../components/Item';
 import Typography from '@mui/material/Typography';
 import leftbg from "../assets/images/left-bg.png";
+import Herosmall from '../components/Herosmall';
 
 
 
@@ -56,6 +57,13 @@ console.log(result);
 
 
   return (
+    <>
+    <Herosmall 
+      pageName="topper"
+      areaTotalStudent={result.length}
+      field="topper student"
+
+    />    
     <Topperwrapper>
       <Container className='areawrapper common_margin'>
       <Typography variant="h3" className='mt-3'>Topper list</Typography>
@@ -74,6 +82,8 @@ console.log(result);
       </Container>
 
     </Topperwrapper>
+
+    </>
   )
 }
 

@@ -4,8 +4,10 @@ const Teammember = (props) => {
     const {name,middlename,surname,resident,position,contact} = props;
   return (
     <div className='card'>
-        <div className='card_image'>
-        <img src="https://anilkapse1.github.io/kapsecode/assets/user-eaef6175.png" alt="username"/>
+        <div className='image_container'>
+          <div className='card_image'>
+            <img src="https://anilkapse1.github.io/kapsecode/assets/user-eaef6175.png" alt="username"/>
+          </div>
         </div>
         <div className='card_details'>
         <h4>{name} {surname} - {position}</h4>
