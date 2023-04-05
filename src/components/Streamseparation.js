@@ -73,7 +73,10 @@ const Streamseparation = ({data,id,groupName}) => {
     return (
     <Streamwrapper>
         <Typography variant="h3" className='mt-3'>{groupName}</Typography>
-        <span className='count_head'>total no of student: <span className='count_stream'>{data.length}</span></span>
+        <span className='count_head'>
+            total no of student: <span className='count_stream'>{data.length}</span>
+        </span>
+        
         <div className="item_container">
         <Slider {...Settings}>
 

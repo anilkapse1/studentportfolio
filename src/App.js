@@ -12,6 +12,8 @@ import { GlobalStyle } from './GlobalStyle'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
 import Demo from './components/Demo'
+import Herosmall from './components/Herosmall'
+
 
 
 const App = () => {
@@ -32,12 +34,15 @@ const App = () => {
   }
 
 
+
+
+
+
   return (
     <ThemeProvider theme={theme}>
     <GlobalStyle/>
     <BrowserRouter>
             <Header/>
-            <Hero/>
             <Routes>
               <Route path="/studentportfolio" element={<Home/>}/>
               <Route path="/stream" element={<Stream/>}/>

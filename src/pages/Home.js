@@ -13,6 +13,7 @@ const Home = () => {
 
   return (
     <>
+    <Hero/>
     <SearchStudent/>
     <Areacounting/>
     </>

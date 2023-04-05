@@ -8,7 +8,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 
 const Filterarea = (props) => {
-    console.log('filter are page');
+    console.log('filter page');
     console.log(props.filterVal);
 
     const onSelectHandler = (events) => {

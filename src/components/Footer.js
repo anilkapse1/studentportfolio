@@ -8,11 +8,16 @@ import ShareRoundedIcon from '@mui/icons-material/ShareRounded';
 import HomeIcon from '@mui/icons-material/Home';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { useNavigate } from 'react-router-dom';
 
 
 const Footer = () => {
   const Footerwrapper=styled.section`
-  background-color:${({theme})=>theme.colors.text7};
+  ${'' /* background: rgb(152,71,127);
+  background: linear-gradient(63deg, rgba(152,71,127,1) 29%, rgba(100,40,102,1) 66%, rgba(64,19,85,1) 92%); */}
+
+  background: rgb(152,71,127);
+background: linear-gradient(126deg, rgba(152,71,127,1) 28%, rgba(100,40,102,1) 71%, rgba(64,19,85,1) 100%);
   display:flex;
   height:100vh;
   .widget{
@@ -36,8 +41,11 @@ const Footer = () => {
         text-transform: uppercase;
         font-weight: 500;
       }
-      span{
+      span,address{
         font-weight:200;
+      }
+      address p{
+        margin-bottom:5px;
       }
     }
   }
@@ -57,9 +65,9 @@ const Footer = () => {
       margin:0 15px;
     }
   }
-
-  
   `;
+
+  const navigate = useNavigate();
 
   return (
     <Footerwrapper>
@@ -68,24 +76,30 @@ const Footer = () => {
           <section className='footer_logo'>
             <img src={footer_logo} alt="demo"/>
           </section>
-          <section>
-            <h1>Weekly update</h1>
-            <span>UPSC Key- December 15, 2022</span>
-            <span></span>
-          </section>
+          
           <section>
             <h1>topper</h1>
-            <span>topper list</span>
+            <span style={{cursor:"pointer"}} onClick={()=>navigate('/topper')}>topper list</span>
           </section>
           <section>
             <h1>announcement</h1>
-            <span>mba entrance exam 2022</span>
+            <span style={{cursor:"pointer"}} onClick={()=>navigate('/announcement')}>announcement list</span>
             <span></span>
+          </section>
+          <section>
+            <h1>contact us</h1>
+              <address>
+              <p>Rohit Samaj Seva Trust,</p>
+              <p>101 A, Shri OM Co. Operative Housing Society, Behind Kumar School</p>
+              <p>vapi 396191 gujarat</p>              
+              <p>+91-9909250102</p>
+              <p>rohitsamaj.st@gmail.com</p>
+              </address>
           </section>
         </div>
         <div className='copyright'>
           <Fab size="small" color="secondary" aria-label="add">
-            <HomeIcon />
+            <HomeIcon onClick={()=>navigate('/studentportfolio')}/>
           </Fab>
           <Fab size="small" color="secondary" aria-label="add">
             <ShareRoundedIcon />

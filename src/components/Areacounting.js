@@ -33,12 +33,12 @@ const Areacounting = () => {
                     display:flex;
                     flex-wrap:wrap;
                     flex-direction:row;
+                    gap:20px;   
                     .list{
                         flex:0 1 17%;
                         text-align:center;
                         padding:15px;
                         box-shadow: 0 6px 16px rgb(52 105 203 / 16%);
-                        margin: 0 25px 25px 0;
                         border-top-right-radius: 10%;
                         border-bottom-left-radius: 10%;
                         .image_container{
@@ -50,11 +50,9 @@ const Areacounting = () => {
                                 width:75%;
                             }
                             span{
-                                position: absolute;
-                                left: 50%;
-                                top: 40%;
-                                transform: translate(-50%, -40%);
-                                color: white;
+                                color: ${({theme})=>theme.colors.text7};
+                                display: block;
+                                font-weight: 700;
                             }
                         }
                         span{

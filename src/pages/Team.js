@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Typography from '@mui/material/Typography';
 import leftbg from "../assets/images/left-bg.png";
 import Teammember from '../components/Teammember';
+import Herosmall from '../components/Herosmall';
+
 
 
 
@@ -39,14 +41,23 @@ const Team = () => {
       background:transparent;
       align-items: center;
       border:none;
-      .card_image{
-        border-radius:50%;
-        overflow:hidden;
-        border: 1px solid #5a1466;
-        width:60%;
-        position:relative;
-        width:200px;
-        height:200px;
+      .image_container{
+          width:200px;
+          height:200px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          border: 1px solid ${({theme})=>theme.colors.headeractive};
+
+        .card_image{
+          border-radius:50%;
+          overflow:hidden;
+          width:60%;
+          position:relative;
+          width:150px;
+          height:150px;
+      }
+
       }
       .card_details{
         margin-top:20px;
@@ -91,6 +102,13 @@ const Team = () => {
   console.log(team);
   
   return (
+    <>
+    <Herosmall 
+      pageName="team"
+      areaTotalStudent={team.length}
+      field="education wing members"
+
+    />
     <Teamwrapper>
       <Container className='announcementwrapper common_margin'>
         <Typography variant="h3" className='mt-3'>Teams</Typography>
@@ -111,6 +129,8 @@ const Team = () => {
         </section>
       </Container>
     </Teamwrapper>
+
+    </>
   )
 }
 

@@ -94,12 +94,17 @@ body{
     color:#f7f772;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
     z-index:1;
+    text-align:right;
+    img{
+      max-width:10%;
+      display: inline-block;
+    }
 }
 
 @keyframes up-down{
     0%{
         transform:translateY(10px);
-        color:red;
+        color:gold;
 
     }
     100%{
