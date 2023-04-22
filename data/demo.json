@@ -1,0 +1,36 @@
+[
+    {
+       "name": "okok",
+       "middle_name": "ramesh",
+       "surname": "kapse",
+       "gender": "boy",
+       "area": "khattalawada",
+       "stream": "english",
+       "std": "6th",
+       "group": "middle stage",
+       "topper": false,
+       "university": "mumbai",
+       "achievement_details": "",
+       "achievement_image": "",
+       "college_name": "viva",
+       "profile_image": "assets/images/boy.png",
+       "academic_year": "2023-24"
+    },
+    {
+       "name": "okok2",
+       "middle_name": "raman",
+       "surname": "rohit",
+       "gender": "boy",
+       "area": "khattalawada",
+       "stream": "commerce",
+       "std": "8th",
+       "group": "middle stage",
+       "topper": false,
+       "university": "mumbai",
+       "achievement_details": "",
+       "achievement_image": "",
+       "college_name": "viva",
+       "profile_image": "assets/images/boy.png",
+       "academic_year": "2023-24"
+    }
+] 
