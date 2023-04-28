@@ -1,16 +1,16 @@
 {
     "announcement":[
         {
-            "heading":"heading 1",
-            "description":"heading 1 description"
+            "heading":"announcement 1",
+            "description":"description"
         },
         {
-            "heading":"heading 2",
-            "description":"heading 2 description"
+            "heading":"announcement 2",
+            "description":"description"
         },
         {
-            "heading":"heading 3",
-            "description":"heading 3 description"
+            "heading":"announcement 3",
+            "description":"description"
         }
     ]
 }
