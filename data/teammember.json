@@ -1,7 +1,7 @@
 {
   "teams":[
     {
-        "name":"ramesh",
+        "name":"mr.ramesh",
         "middlename":"prema",
         "surname":"rohit",
         "resident":"vapi",
@@ -10,7 +10,7 @@
         "gender":"male"
       },
       {
-        "name":"anil",
+        "name":"mr.anil",
         "middlename":"ramesh",
         "surname":"kapse",
         "resident":"khattalwada",
@@ -19,7 +19,7 @@
         "gender":"male"
       },
       {
-        "name":"daxa",
+        "name":"mrs.daxa",
         "middlename":"bansi",
         "surname":"rohit",
         "resident":"silvassa",
@@ -28,47 +28,47 @@
         "gender":"female"
       },
       {
-        "name":"ganesh",
-        "middlename":"",
+        "name":"mr.ganesh",
+        "middlename":"s",
         "surname":"rohit",
         "resident":"silvassa",
-        "position":"member",
+        "position":"vice President",
         "contact":"9712129313",
         "gender":"male"
       },
       {
-        "name":"mehul",
+        "name":"mr.mehul",
         "middlename":"pravin",
         "surname":"godkar",
         "resident":"phansa",
-        "position":"member",
+        "position":"Secretary",
         "contact":"9712129313",
         "gender":"male"
       },
       {
-        "name":"navin",
-        "middlename":"",
+        "name":"mr.navin",
+        "middlename":"k",
         "surname":"rohit",
-        "resident":"",
-        "position":"member",
+        "resident":"vaghchhipa",
+        "position":"president",
         "contact":"9712129313",
         "gender":"male"
       },
       {
-        "name":"vijay",
-        "middlename":"",
+        "name":"mr.vijay",
+        "middlename":"b",
         "surname":"rohit",
-        "resident":"",
-        "position":"member",
+        "resident":"ambheti",
+        "position":"treasurer",
         "contact":"9712129313",
         "gender":"male"
       },
       {
-        "name":"arvind",
-        "middlename":"",
+        "name":"mr.arvind",
+        "middlename":"m",
         "surname":"rohit",
         "resident":"sarigam",
-        "position":"member",
+        "position":"Joint Treasurer",
         "contact":"9712129313",
         "gender":"male"
       },
@@ -82,16 +82,16 @@
         "gender":"male"
       },
       {
-        "name":"Jagu",
-        "middlename":"",
+        "name":"mr.Jagu",
+        "middlename":"m",
         "surname":"rohit",
         "resident":"vapi",
-        "position":"member",
+        "position":"Joint Secretary",
         "contact":"9712129313",
         "gender":"male"
       },
       {
-        "name":"keshav",
+        "name":"mr.keshav",
         "middlename":"govind",
         "surname":"rohit",
         "resident":"sukhesh",
@@ -100,7 +100,7 @@
         "gender":"male"
       },
       {
-        "name":"ketan",
+        "name":"mr.ketan",
         "middlename":"vinod",
         "surname":"gore",
         "resident":"khattalwada",
@@ -109,7 +109,7 @@
         "gender":"male"
       },
       {
-        "name":"manu",
+        "name":"mr.manu",
         "middlename":"babar",
         "surname":"rohit",
         "resident":"sukhesh",
@@ -118,7 +118,7 @@
         "gender":"male"
       },
       {
-        "name":"shailesh",
+        "name":"mr.shailesh",
         "middlename":"",
         "surname":"rohit",
         "resident":"",
@@ -127,7 +127,7 @@
         "gender":"male"
       },
       {
-        "name":"shashi",
+        "name":"mr.shashi",
         "middlename":"magan",
         "surname":"rohit",
         "resident":"ambheti",
@@ -136,7 +136,7 @@
         "gender":"male"
       },
       {
-        "name":"tejas",
+        "name":"mr.tejas",
         "middlename":"",
         "surname":"rohit",
         "resident":"",
@@ -145,7 +145,7 @@
         "gender":"male"
       },
       {
-        "name":"prasan",
+        "name":"mr.prasan",
         "middlename":"mukesh",
         "surname":"rohit",
         "resident":"karwad",
