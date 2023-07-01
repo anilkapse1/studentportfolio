@@ -90,6 +90,24 @@
         "academic_year": "2023-24"
     },
     {
+        "name": "yashika",
+        "middle_name": "vipul",
+        "surname": "rohit",
+        "gender": "girl",
+        "area": "silvassa",
+        "stream": "english",
+        "std": "2nd",
+        "semester":"",
+        "group": "primary stage",
+        "topper": false,
+        "university": "gujarat",
+        "achievement_details": "",
+        "achievement_image": "",
+        "college_name": "",
+        "profile_image": "assets/images/boy.png",
+        "academic_year": "2023-24"
+    },
+    {
         "name": "devansh",
         "middle_name": "amar",
         "surname": "rohit",
